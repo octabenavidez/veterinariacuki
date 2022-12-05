@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <header>
+        <h1>Veterinaria Cuki</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a class="selected" href="formulario.html">Contactanos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formImg" >
+            <div>
+                <form>
+                    <ul>
+                        <li>
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="user_name" required>
+                        </li>
+                        <li>
+                            <label for="mail">Correo:</label>
+                            <input type="email" id="mail" name="user_mail" required>
+                        </li>
+                        <li>
+                            <label for="msg">Mensaje:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                        <li class="checkbox">
+                            <label for="cbox2" >Recibir correos</label>
+                            <input type="checkbox" id="check" value="second_checkbox"> 
+                        </li>
+                        <li>
+                            <input type="submit" value="Enviar datos" class="submit">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            
+            <div class="contenedorImgForm">
+                <img src="https://eldiariony.com/wp-content/uploads/sites/2/2022/05/perro-abandonado-veterinario-shutterstock_1361660450.jpg?quality=60&strip=all&w=1200" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="redes">
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt=""></a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt=""></a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt=""></a>
+        </div>
+        <div>
+            <p>Veterinaria Cuki - Luis Agote 250 Bo Mirador</p>
+        </div>
+    </footer>
+
+    <script src="app2.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

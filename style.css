@@ -1,0 +1,306 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #E6CBA8;
+    padding: 10px;
+}
+
+h1{
+    margin: 0;
+    display: inline-block;
+    transition: ease-in .4s;
+}
+
+h1:hover{
+    transform: scale(.7);
+}
+
+ul{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 10px 0px 5px 0px;
+}
+
+li{
+    list-style: none;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: #f8ebdb;
+    font-weight: bold;
+}
+
+a:hover{
+    color: rgb(233, 55, 55);
+}
+
+.selected{
+    color: rgb(255, 255, 255);
+}
+
+/* Main */
+
+.textoA{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.textoA p{
+    width: 40%;
+}
+
+@media screen and (max-width:420px) {
+	.textoA p{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+.textoA span{
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    color: red;
+}
+
+@media screen and (max-width:420px) {
+	.textoA span{
+        margin-top: 25px;
+    }    
+}
+
+.servicios h2{
+    text-align: center;
+    margin: 15px 0px 0px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.servicios{
+    border-bottom: 1px solid black;
+}
+
+.contenedor-img{
+    display: flex;
+    margin: 40px 100px 20px 100px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:420px) {
+	.contenedor-img{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contenedor-img div{
+    width: 300px;
+}
+
+.contenedor-img img{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    -webkit-box-shadow: 7px 7px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 13px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 13px 0px rgba(0,0,0,0.75);
+    transition: all 1s;
+}
+
+.contenedor-img img:hover{
+    transform: scale(1.1);
+}
+
+.contenedor-img p{
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Fecha */
+
+.fecha{
+    margin: 20px 30px 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fecha select{
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: inherit;
+    outline: 0;
+}
+
+.parrafoFecha{
+    text-align: center;
+}
+
+.rojo{
+    color: red;
+}
+
+.verde{
+    color: green;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width:420px) {
+	footer{
+        margin-top: 15px;
+        gap: 0px;
+        flex-direction: column;
+    }
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.redes img{
+    opacity: 0.5;
+}
+
+.redes img:hover{
+    opacity: 1;
+}
+
+footer img{
+    width: 30px;
+    border-radius: 30%;
+}
+
+/* Formulario */
+
+.formImg{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:420px) {
+	.formImg{
+        flex-direction: column;
+    } 
+}
+
+.formImg img{
+    object-fit: cover;
+    height: 300px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:420px) {
+    .contenedorImgForm{
+        display: flex;
+        justify-content: center;
+    }
+	.formImg img{
+        width: 90%;
+    }
+}
+
+form ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form ul li label{
+    display: block;
+}
+
+form ul li input{
+    padding: 5px 10px 5px 10px;
+    margin-top: 2px;
+}
+
+input, textarea{
+    font-family: 'Montserrat', sans-serif;
+    outline: 0;
+}
+
+textarea{
+    width: 170px;
+    height: 75px;
+    min-width: 170px;
+    max-width: 170px;
+    min-height: 75px;
+    max-height: 100px;    
+}
+
+.submit{
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(67, 129, 67);
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.checkbox{
+    display: flex;
+    gap: 5px;
+}
+
+/* Galeria */
+
+.galeria{
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:420px) {
+    .galeria{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.galeria img{
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    object-fit: cover;
+    filter: blur(1.5px);
+    transition: all .5s ease-in-out;
+}
+
+.galeria img:hover{
+    filter: blur(0px);
+    transform: scale(1.05);
+}
+
+.tituloGaleria{
+    text-align: center;
+}
+
+.swal2-image{
+    border-radius: 10px;
+}
+
